@@ -3,7 +3,6 @@ FROM node:alpine
 # RUN npm install -g yarn
 WORKDIR /app
 
-COPY yarn.lock .
 COPY package.json .
 
 RUN yarn install

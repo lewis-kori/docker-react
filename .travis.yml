@@ -6,5 +6,6 @@ services:
 before_install:
   - docker build -t lewiskori/docker-react -f Dockerfile.dev .
 
+# scripts to run in the travis environment
 script:
   - docker run -e CI=true lewiskori/docker-react yarn test
